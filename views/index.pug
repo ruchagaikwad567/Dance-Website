@@ -1,0 +1,61 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+       ul 
+          div#mlogo1
+             img(src='/static/img/mlogo1.jpg')
+             |HDA
+          li #[a(href="/") Home] 
+          li #[a(href="/") About] 
+          li #[a(href="/") Services] 
+          li #[a(href="/") Class Info] 
+          li #[a(href="/") Contact Us]
+    section#introSection 
+        div Welcome to the Dance Academy 
+        div.small Live Learn Dance Repeat   
+    
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/slogo1.jpg")
+                div.card-content
+                    h3 This is the best dance academy of the universe!
+
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/img/slogo2.jpg")
+                div.card-content
+                    h3 This is the best dance academy in India!
+
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/slogo3.jpg")
+                div.card-content
+                    h3 This is the best dance academy in Pune!  
+
+    section#sponsersSection  
+        h2 Our Sponsors
+        div#sponsors 
+          img(src= "/static/img/logo1.jpg", alt= "Sponsor Image", class= "spImage")
+          img(src= "/static/img/logo2.jpg", alt= "Sponsor Image", class= "spImage")
+          img(src= "/static/img/logo3.jpg", alt= "Sponsor Image", class= "spImage")
+          img(src= "/static/img/logo4.jpg", alt= "Sponsor Image", class= "spImage")          
+    footer#footer 
+        | Copyright 2020 SuperLameDanceAcademy.com All Rights Reserved      
+          
+          
+   
+    script
+      include ../static/index.js
